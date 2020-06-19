@@ -1,0 +1,65 @@
+body {
+    background-color: rgb(204, 138, 53);
+}
+
+#main {
+    background-color: rgb(62, 62, 128);
+    margin          : 10%;
+    /* padding      : 4%; */
+    display         : flex;
+    justify-content : space-around;
+    border-radius   : 4%;
+}
+
+.card {
+    background-color: cornflowerblue;
+    width           : 25%;
+    margin          : 4%;
+    border-radius   : 4%;
+    text-align      : center;
+    box-shadow      : 4px 4px 5px 5px;
+    height          : 25%;
+
+}
+
+a {
+    text-decoration: none;
+    color          : black;
+}
+
+img {
+    width        : 70%;
+    border-radius: 15%;
+    margin       : 4%;
+}
+
+.resume {
+    background-color: rgb(192, 200, 214);
+    width           : 65%;
+    margin          : 4%;
+    border-radius   : 4%;
+    box-shadow      : 4px 4px 5px 5px;
+}
+
+table {
+    text-align: center;
+    border: 1;
+}
+
+@media only screen and (min-device-width:781px) and (max-device-width:922px) {
+    #main {
+        flex-direction: row-reverse;
+    }
+}
+
+@media only screen and (min-device-width:481px) and (max-device-width:780px) {
+    #main {
+        flex-direction: column;
+        align-items   : center;
+    }
+}
+@media only screen and (min-device-width:320px) and (max-device-width:480px) {
+    #main {
+        flex-direction: column;
+    }
+}
